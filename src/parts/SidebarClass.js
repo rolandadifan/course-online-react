@@ -8,7 +8,7 @@ import { Link, withRouter } from 'react-router-dom';
 function SidebarClass({ data,match,defaultUri }) {
     
     const getNavLinkClass = (path) => {
-        return match.url === path || defaultUri == path ? "text-teal-500" : "text-indigo-500"
+        return match.url === path || defaultUri === path ? "text-teal-500" : "text-indigo-500"
     }
 
     const list = []

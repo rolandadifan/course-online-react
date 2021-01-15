@@ -27,7 +27,7 @@ export default function Joined({history, match}) {
        courses.join(match.params.class).then(res => {
            history.push(`/courses/${match.params.class}`)
        }).catch(err => {
-           if(err?.response?.data?.message == "user already take this course")
+           if(err?.response?.data?.message === "user already take this course")
            history.push(`/courses/${match.params.class}`)
        })
     }

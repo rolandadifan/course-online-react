@@ -17,7 +17,7 @@ export default function DetailsClass({match, history}) {
         window.scroll(0,0)
         dispatch(statusCourses("loading"))
         courses.details(match.params.class).then( res => {
-            if(res.chapters.length == 0)
+            if(res.chapters.length === 0)
             throw new Error("Class might be not ready yest")
             else dispatch(watchCourse(res))
         })
