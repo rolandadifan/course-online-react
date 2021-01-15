@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import {useDispatch} from 'react-redux';
 import {withRouter} from 'react-router-dom';
 import users from 'constan/api/users';
 
@@ -9,7 +8,7 @@ import Select from 'component/form/select';
 import Input from 'component/form/input'
 
 function LoginForm({ history }) {
-  const dispatch = useDispatch();
+
 
   const [{name, email, password, profession, otherProfession }, setState] = useForm({
     name: "",

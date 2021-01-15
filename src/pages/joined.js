@@ -1,6 +1,5 @@
 import React, {useState,useEffect} from 'react';
 import courses from 'constan/api/courses';
-import {Link} from 'react-router-dom';
 import ServerError from 'pages/500';
 import Loading from 'pages/Loading';
 
